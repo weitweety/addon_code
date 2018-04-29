@@ -11,14 +11,6 @@
 		$rc -> receive = "true";
 		header("Content-type: application/json");
 		echo (json_encode($rc));
-			/*
-		    $servername = "localhost";
-		    $username = "root";
-		    $password = "jyKP5nAEC52Ikvut";
-		    $dbname = "users";
-		    */
-		    // Create connection
-		    //$conn = mysqli_connect($servername, $username, $password, $dbname);
 		    $content = $data['postIt'];
 		    $type = "image/jpeg";
 		    $picname = "picname";
