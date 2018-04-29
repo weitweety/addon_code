@@ -1,15 +1,5 @@
 <?php
 	require 'connect.php';
-
-	/*$servername = 'localhost';
-    $username = 'root';
-    $password = 'jyKP5nAEC52Ikvut';
-    $dbname = 'users';
-	$conn = mysqli_connect($servername, $username, $password, $dbname);*/
-	/*if(isset($_GET['pinnum']))
-		echo "pin exists";
-	else
-		echo "pin not exists";*/
 	$pin = $_GET['pinnum'];
 	//echo "pin is".$pin;
 	$sql= "SELECT * FROM `recordwall` WHERE Pin = $pin";
