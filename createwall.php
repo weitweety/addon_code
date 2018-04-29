@@ -4,15 +4,6 @@
       public $wallpin = "";
    	}
 	$data = json_decode(file_get_contents("php://input"), true);
-
-	/*
-	$servername = "localhost";
-	$username = "root";
-	$password = "jyKP5nAEC52Ikvut";
-	$dbname = "users";
-	*/
-	// Create connection
-	//$conn = mysqli_connect($servername, $username, $password, $dbname);
 	// Check connection
 	if (mysqli_connect_errno()) {
 	    die("Connection failed: " . mysqli_connect_errno());
