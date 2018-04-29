@@ -5,14 +5,6 @@
       public $builder = "";
    	}
 	$data = json_decode(file_get_contents("php://input"), true);
-	/*
-	$servername = "localhost";
-	$username = "root";
-	$password = "jyKP5nAEC52Ikvut";
-	$dbname = "users";
-	*/
-	// Create connection
-	//$conn = mysqli_connect($servername, $username, $password, $dbname);
 	// Check connection
 	if (mysqli_connect_errno()) {
 	    die("Connection failed: " . mysqli_connect_errno());
@@ -25,13 +17,6 @@
 	{
 	    die('cannot read from database' . mysqli_error($conn));
 	}
-	//echo "check...".$sql;
-	/*for debug...
-	if(mysqli_query($conn,$sql))
-		echo "insert success\n";
-	else
-		echo "something error\n";
-	*/
 	$row = mysqli_fetch_array($result);
 	//var_dump($row);
 	$rn = new ReturnName();
