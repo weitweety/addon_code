@@ -12,7 +12,7 @@
     width: 100%;
     }
    header{
-    color:#008080;
+    color:#f7fbfc;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     margin-left: 15px;
     clear:left;
@@ -26,9 +26,7 @@
 
    }
    body{
-   background-image: url(<?php 
-    require 'background.php';
-    echo "\"".$background."\"";?>);
+   background-color: #77bca9;
   }
 
    </style>
@@ -47,3 +45,4 @@
   </div>
   </body>
 </html>
+
