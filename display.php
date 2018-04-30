@@ -41,12 +41,15 @@ echo '<link href="data:image/x-icon;base64,'.$ficon.'" rel="icon" type="image/x-
   <style>
 	img { 
     border:5;
-    border-color: white;  
+    border-color: #77bca9;  
 	}
 	h2 {
 		text-align:left;
-		color:  #4682B4;
+		color:  #f7fbfc;
 		margin-left:10px;
+	}
+	body {
+		background-color:  #77bca9;
 	}
   </style>
  </head>
